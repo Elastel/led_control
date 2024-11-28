@@ -1,6 +1,7 @@
 # led_control
 led control for EG500
 
+# Get started
 $ git clone https://github.com/Elastel/led_control.git
 
 $ cd led_control
