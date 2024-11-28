@@ -11,7 +11,7 @@ $ ./led_ctl --help
 
 led_ctl -m < system | wifi | alarm | online | sig > -s <on | off | stop | none | low | mid | high>
 
-eg. LTE led
+# eg. LTE led
 # signal = 99 (no network)
 $ ./led_ctl -m sig -s none
 
