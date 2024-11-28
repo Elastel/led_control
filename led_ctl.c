@@ -198,29 +198,29 @@ int main(int argc, char **argv)
 		}
 	}
 	
-    mode = get_led_mode(str_mode);
-    if (mode == -1) {
-        print_usage();
-        return 1;
-    }
+	mode = get_led_mode(str_mode);
+	if (mode == -1) {
+	print_usage();
+	return 1;
+	}
 
 	if (mode != SIG_MODE) {
 	    action = get_led_action(str_action);
 	    if (action == -1) {
-	        print_usage();
-	        return 1;
+		print_usage();
+		return 1;
 	    }
-
+	
 	    set_led_status(mode, action);
 	} else {
 		sig_action = get_sig_action(str_action);
 		if (sig_action == -1) {
-	        print_usage_sig();
-	        return 1;
+		print_usage_sig();
+		return 1;
 	    }
-
+	
 		set_led_LTE(sig_action); 
 	}
 
-    return 0;
+	return 0;
 }
