@@ -7,16 +7,16 @@
 #define PCA9554_REG_POL                 0x02
 #define PCA9554_REG_CTRL                0x03
 
-#define LED_POWER_ON 0xbf		// & 运算
-#define LED_POWER_OFF 0x40		// | 运算
-#define LED_SIG_NONE 0x15		// 无网络 | CSQ = 99
+#define LED_POWER_ON 0xbf		// &
+#define LED_POWER_OFF 0x40		// |
+#define LED_SIG_NONE 0x15		// no network | CSQ = 99
 #define LED_SIG_LOW  0xef		// < -105dBm | CSQ < 11
 #define LED_SIG_MID 0xeb		// < -85dBm, > -105dBm | 11 < CSQ < 18
 #define LED_SIG_HIGH 0xea		// > -85dBm | 18 < CSQ < 31
 #define LED_ONLINE_ON 0x7f
 #define LED_ONLINE_OFF 0x80
 #define LED_SYS_ON 0xdf
-#define LED_SYS_OFF 0x2a
+#define LED_SYS_OFF 0x20
 #define LED_WIFI_ON 0xf7
 #define LED_WIFI_OFF 0x08
 #define LED_ALARM_ON 0xfd
