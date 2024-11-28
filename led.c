@@ -87,7 +87,6 @@ int set_led_online_off(void)
 
 int set_led_LTE(int signal)
 {
-	// 先信号灯全灭，再根据信号强度亮灯
 	u8 o_val;
 	u8 n_val;
 	u8 val;
