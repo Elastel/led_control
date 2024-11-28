@@ -8,4 +8,5 @@ $ cd led_control
 $ make clean && make
 
 $ ./led_ctl --help
+
 led_ctl -m < system | wifi | alarm | online | sig > -s <on | off | stop | none | low | mid | high>
