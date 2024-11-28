@@ -13,14 +13,14 @@ $ ./led_ctl --help
 led_ctl -m < system | wifi | alarm | online | sig > -s <on | off | stop | none | low | mid | high>
 
 # eg. LTE led
-# signal = 99 (no network)
+# No network | CSQ = 99
 $ ./led_ctl -m sig -s none
 
-# signal <= 11
+# < -105dBm | CSQ < 11
 $ ./led_ctl -m sig -s low
 
-# signal > 11 && signal < 18
+# < -85dBm, > -105dBm | 11 < CSQ < 18
 $ ./led_ctl -m sig -s mid
 
-# signal >= 18 && signal <= 31
+# > -85dBm | 18 < CSQ < 31
 $ ./led_ctl -m sig -s high
