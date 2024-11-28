@@ -196,8 +196,6 @@ int write_i2c_data(u16 addr, u8 offset, u8 val)
 			printf("%s error!\n",__FUNCTION__);
 		}
 
-		// printf("write success , val  = %02x\n", val);
-		//usleep(10000);    // 延时程序
 		i2c_close(fd);
 	}
 	
